@@ -1,15 +1,15 @@
-;;; vertica-mode.el --- Vertica SQL mode extension
+;;; vertica.el --- Vertica SQL mode extension
 
 ;; Copyright (C) 2013 Roman Scherer
 
 ;; Author: Roman Scherer <roman@burningswell.com>
 ;; Version: 0.1.0
-;; Package-Requires: ((sql-mode "3.0"))
+;; Package-Requires: ((sql "3.0"))
 ;; Keywords: sql vertica
 
 ;;; Commentary:
 
-;; This package adds Vertica to the sql-mode product list.
+;; This package adds Vertica to the SQL mode product list.
 
 ;;; License:
 
@@ -75,6 +75,6 @@
               :prompt-cont-regexp "^\\w*[-(][#>] ")
             sql-product-alist))
 
-(provide 'vertica-mode)
+(provide 'vertica)
 
-;;; vertica-mode.el ends here
+;;; vertica.el ends here
