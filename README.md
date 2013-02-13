@@ -1,6 +1,6 @@
 # Vertica Mode
 
-Adds Vertica to Emacs sql-mode product list.
+Adds Vertica to the Emacs sql-mode product list.
 
 ## Installation
 
