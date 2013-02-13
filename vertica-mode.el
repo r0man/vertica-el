@@ -7,7 +7,6 @@
 ;; Package-Requires: ((sql-mode "3.0"))
 ;; Keywords: sql vertica
 
-
 ;;; Commentary:
 
 ;; This package adds Vertica to the sql-mode product list.
@@ -29,7 +28,6 @@
 ;; Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
 
-;;;###autoload
 (require 'sql)
 
 (defvar sql-product-alist-backup sql-product-alist)
@@ -63,6 +61,7 @@
         (setq params (append (list "-U" sql-user) params)))
     (sql-comint product params)))
 
+;;;###autoload
 (defun sql-vertica (&optional buffer)
   "Run vsql as an inferior process."
   (interactive "P")
