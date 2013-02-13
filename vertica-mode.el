@@ -30,9 +30,6 @@
 
 (require 'sql)
 
-(defvar sql-product-alist-backup sql-product-alist)
-(setq sql-product-alist sql-product-alist-backup)
-
 (defcustom sql-vertica-program "vsql"
   "Command to start the Vertica client."
   :type 'file
