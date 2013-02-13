@@ -76,3 +76,5 @@
             sql-product-alist))
 
 (provide 'vertica-mode)
+
+;;; vertica-mode.el ends here
