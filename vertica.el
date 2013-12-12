@@ -66,14 +66,13 @@
 
 (sql-add-product
  'vertica "Vertica"
- :sqli-program sql-vertica-program
- :sqli-options sql-vertica-options
- :sqli-login sql-vertica-login-params
- :sqli-comint-func sql-comint-vertica
+ :sqli-program 'sql-vertica-program
+ :sqli-options 'sql-vertica-options
+ :sqli-login 'sql-vertica-login-params
+ :sqli-comint-func 'sql-comint-vertica
  :prompt-regexp "^\\w*=[#>] "
  :prompt-length 5
- :prompt-cont-regexp "^\\w*[-(][#>] "
- sql-product-alist)
+ :prompt-cont-regexp "^\\w*[-(][#>] ")
 
 (provide 'vertica)
 
