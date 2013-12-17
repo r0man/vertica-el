@@ -64,15 +64,16 @@
   (interactive "P")
   (sql-product-interactive 'vertica buffer))
 
-(sql-add-product
- 'vertica "Vertica"
- :sqli-program 'sql-vertica-program
- :sqli-options 'sql-vertica-options
- :sqli-login 'sql-vertica-login-params
- :sqli-comint-func 'sql-comint-vertica
- :prompt-regexp "^\\w*=[#>] "
- :prompt-length 5
- :prompt-cont-regexp "^\\w*[-(][#>] ")
+(eval-after-load "sql"
+  '(sql-add-product
+    'vertica "Vertica"
+    :sqli-program 'sql-vertica-program
+    :sqli-options 'sql-vertica-options
+    :sqli-login 'sql-vertica-login-params
+    :sqli-comint-func 'sql-comint-vertica
+    :prompt-regexp "^\\w*=[#>] "
+    :prompt-length 5
+    :prompt-cont-regexp "^\\w*[-(][#>] "))
 
 (provide 'vertica)
 
